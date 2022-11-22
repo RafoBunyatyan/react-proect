@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import { Box, Slider } from '@mui/material';
+import Icon, { Stack } from '@mdi/react';
+import { mdiPhone } from '@mdi/js';
 import './App.css';
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
+
 
 function valuetext(value) {
 	return `${value}°C`;
@@ -14,8 +16,7 @@ function App() {
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
 
-	const [value, setValue] = React.useState([20, 70]);
-
+	const [value, setValue] = React.useState([40, 67]);
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
 	};
@@ -41,7 +42,7 @@ function App() {
 				</Modal.Footer>
 			</Modal>
 
-			<Box sx={{ width: 400 }}>
+			<Box sx={{ width: 300 }}>
 				<Slider
 					getAriaLabel={() => 'Temperature range'}
 					value={value}
@@ -50,6 +51,8 @@ function App() {
 					getAriaValueText={valuetext}
 				/>
 			</Box>
+
+			<Icon path={mdiPhone} style={{ width: '50px' }} />
 		</>
 	);
 }
