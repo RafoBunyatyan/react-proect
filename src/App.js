@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { Box, Slider } from '@mui/material';
 import Icon, { Stack } from '@mdi/react';
-import { mdiPhone } from '@mdi/js';
+import { mdiHeadphones } from '@mdi/js';
 import './App.css';
 
 
@@ -52,7 +52,7 @@ function App() {
 				/>
 			</Box>
 
-			<Icon path={mdiPhone} style={{ width: '50px' }} />
+			<Icon path={mdiHeadphones} style={{ width: '50px' }} />
 		</>
 	);
 }
