@@ -1,13 +1,24 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import { Button, Modal } from 'react-bootstrap';
 import './App.css';
+import Box from '@mui/material/Box';
+import Slider from '@mui/material/Slider';
+
+function valuetext(value) {
+	return `${value}°C`;
+}
 
 function App() {
 	const [show, setShow] = useState(false);
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
+
+	const [value, setValue] = React.useState([20, 70]);
+
+	const handleChange = (event, newValue) => {
+		setValue(newValue);
+	};
 
 	return (
 		<>
@@ -29,6 +40,16 @@ function App() {
 					</Button>
 				</Modal.Footer>
 			</Modal>
+
+			<Box sx={{ width: 400 }}>
+				<Slider
+					getAriaLabel={() => 'Temperature range'}
+					value={value}
+					onChange={handleChange}
+					valueLabelDisplay="auto"
+					getAriaValueText={valuetext}
+				/>
+			</Box>
 		</>
 	);
 }
