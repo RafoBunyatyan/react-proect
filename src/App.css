@@ -1,10 +1,10 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-  color: #3d3d3d !important;
-  background-color: #e5e5e5 !important;
+	background-color: #fff !important;
+	font-family: 'Mardoto', sans-serif !important;
 }
