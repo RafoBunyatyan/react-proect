@@ -1,0 +1,28 @@
+.nav-link {
+	margin: 0 5px !important;
+	padding: 0 !important;
+	display: flex !important;
+	align-items: center !important;
+	text-transform: uppercase !important;
+	font-size: 14px !important;
+	height: 65px !important;
+	letter-spacing: -0.02em !important;
+	color: rgb(57, 57, 57) !important;
+}
+
+@media (max-width: 992px) {
+	.navbar-icon {
+		justify-content: center !important;
+		width: 120px !important;
+	}
+}
+
+@media (max-width: 400px) {
+	.navbar-icon {
+		width: 70px !important;
+	}
+
+	.navbar-img {
+		width: 150px !important;
+	}
+}

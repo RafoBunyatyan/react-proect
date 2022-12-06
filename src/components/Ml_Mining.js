@@ -5,8 +5,15 @@ import Navibar from "./Navibar/Navibar";
 function Ml_Mining() {
 	return (
 		<>
-			<Navibar />
+			<div style={{ marginBottom: '65px', }}>
+				<Navibar />
+				<main>
 
+				</main>
+				<footer>
+
+				</footer>
+			</div>
 		</>
 	)
 }
