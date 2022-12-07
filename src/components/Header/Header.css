@@ -1,0 +1,33 @@
+.crane {
+	background: url(../../assets/images/hero2-desktop.jpg) no-repeat !important;
+	width: 100% !important;
+	background-position: left !important;
+	background-size: cover !important;
+	/* background-size: contain !important; */
+	position: absolute !important;
+	z-index: -1 !important;
+	top: 80px !important;
+	height: 560px !important;
+}
+
+.css-46bh2p-MuiCardContent-root {
+	padding: 0px !important;
+}
+
+.header-complex {
+	background: rgb(255, 255, 255) !important;
+	padding: 1px !important;
+	box-shadow: rgb(0 0 0 / 15%) 0px 2px 9px !important;
+	/* width: 165px !important; */
+}
+
+.header-name {
+	margin: 8px !important;
+	padding: 6px 0px 8px !important;
+	letter-spacing: 0.03em !important;
+	font-size: 14px !important;
+	text-align: center !important;
+}
+
+
+@media (max-width: 1024px) {}

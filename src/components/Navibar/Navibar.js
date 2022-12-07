@@ -11,7 +11,9 @@ function Navibar() {
 			<Navbar collapseOnSelect expand="lg" bg="light" variant="light">
 				<Container>
 					<Navbar.Brand style={{ padding: '16px 0', margin: '0', }} href="#home">
-						<img style={{ width: '170px', }} className='navbar-img' src={Ml_Mining} title='ML Mining' alt='logo' />
+						<a href='https://mlmining.am/hy/' title='ML Mining'>
+							<img className='navbar-img' style={{ width: '170px', }} src={Ml_Mining} alt='logo' />
+						</a>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">

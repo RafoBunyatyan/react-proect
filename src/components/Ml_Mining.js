@@ -1,19 +1,18 @@
 import React from "react";
 import Navibar from "./Navibar/Navibar";
+import Header from "./Header/Header";
 
+import { Container, Row, } from 'react-bootstrap';
 
 function Ml_Mining() {
 	return (
 		<>
-			<div style={{ marginBottom: '65px', }}>
+			<Container style={{ marginBottom: '65px', padding: '0', }}>
 				<Navibar />
-				<main>
-
-				</main>
-				<footer>
-
-				</footer>
-			</div>
+				<Row style={{}}>
+					<Header />
+				</Row>
+			</Container>
 		</>
 	)
 }
