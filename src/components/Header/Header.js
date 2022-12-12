@@ -17,9 +17,10 @@ import { Container, Row, Col, } from 'react-bootstrap';
 import { Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material';
 import './Header.css'
 
+
 function Header() {
 	return (
-		<>{/* backgroundi xndir ka*/}
+		<>{/* There is a problem backgrounds */}
 			<Container style={{ paddingBottom: '25px', height: 'auto', }}>
 				<Row style={{ flexDirection: 'column', margin: 'auto', padding: '220px 0px 40px', }}>
 					<Col style={{ maxWidth: '1180px', margin: '0 auto 200px', }}>
@@ -27,7 +28,6 @@ function Header() {
 						<p className='large-h2' style={{ width: 'auto', color: '#fff', marginBottom: '4px', fontSize: '24px', lineHeight: '35px', }}>Բնակարաններ անմիջապես կառուցապատողից</p>
 					</Col>
 					<Col style={{ maxWidth: '89%', margin: 'auto', display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gridGap: '8px', padding: '0', }}>
-
 						<Card className='header-complex' >
 							<CardActionArea href='https://mlmining.am/construction/'>
 								<CardMedia component="img" image={Avan_Tauers} alt="complex" />
@@ -36,8 +36,6 @@ function Header() {
 								</CardContent>
 							</CardActionArea>
 						</Card>
-
-
 						<Card className='header-complex' >
 							<CardActionArea href='https://mlmining.am/construction/'>
 								<CardMedia component="img" image={Avan_Tauers_1} alt="complex" />
@@ -86,7 +84,6 @@ function Header() {
 								</CardContent>
 							</CardActionArea>
 						</Card>
-
 						<Card className='header-complex' >
 							<CardActionArea href='https://mlmining.am/construction/'>
 								<CardMedia component="img" image={Avan_Tauers_7} alt="complex" />
