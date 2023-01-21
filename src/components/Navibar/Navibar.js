@@ -10,10 +10,8 @@ function Navibar() {
 		<>
 			<Navbar collapseOnSelect expand="lg" bg="light" variant="light">
 				<Container>
-					<Navbar.Brand style={{ padding: '16px 0', margin: '0', }} href="#home">
-						<a href='https://mlmining.am/hy/' title='ML Mining'>
-							<img className='navbar-img' style={{ width: '170px', }} src={Ml_Mining} alt='logo' />
-						</a>
+					<Navbar.Brand href="https://mlmining.am/hy/" style={{ padding: '16px 0', margin: '0', }} title='ML Mining'>
+						<img className='navbar-img' src={Ml_Mining} style={{ width: '170px', }} alt='logo' />
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
